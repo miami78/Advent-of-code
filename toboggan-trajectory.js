@@ -4,7 +4,7 @@ fs.readFile("./input2.txt", (err,data) => {
     if(err){ 
       console.log(err)    
     } else { 
-    const input = data.toString().trim().split("\n");
+    const input = data.split('\n\n')
       
     function checkSlope(xx, yy) {
         let x = 0;
